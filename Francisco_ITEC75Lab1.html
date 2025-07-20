@@ -1,220 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Personal Portfolio of Ken Andrew Francisco</title>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
-<style>
-  * {
-    box-sizing: border-box;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ken Andrew Francisco | Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-  body {
-    font-family: 'Poppins', sans-serif;
-    margin: 20px;
-    background: #f5faff;
-    color: #003366;
-    line-height: 1.6;
-  }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #0e1a2b;
+      color: #dce6f2;
+      line-height: 1.6;
+    }
 
-  main {
-    max-width: 1100px;
-    margin: 0 auto;
-    background: white;
-    padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      background-color: #1a273b;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    }
 
-  header {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 40px;
-    background: linear-gradient(135deg, #004080, #0073e6);
-    color: white;
-    padding: 25px 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,115,230,0.4);
-  }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      background: linear-gradient(135deg, #102840, #1a4d80);
+      color: #ffffff;
+      padding: 25px 30px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 20px rgba(0, 115, 230, 0.4);
+    }
 
-  .image {
-    max-width: 160px;
-    flex-shrink: 0;
-    border-radius: 50%;
-    border: 4px solid white;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  .image:hover {
-    transform: scale(1.05);
-  }
-  .icon {
-    width: 100%;
-    display: block;
-    height: auto;
-    object-fit: cover;
-  }
+    .image {
+      max-width: 160px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
 
-  header h1 {
-    margin: 0 0 8px 0;
-    font-weight: 600;
-    font-size: 2.4rem;
-  }
-  header nav {
-    font-weight: 300;
-    font-size: 1.05rem;
-  }
-  header nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    position: relative;
-    padding-bottom: 4px;
-    transition: color 0.3s ease;
-  }
-  header nav a:hover {
-    color: #cce4ff;
-  }
-  header nav a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: #cce4ff;
-    bottom: 0;
-    left: 0;
-    transition: width 0.3s ease;
-  }
-  header nav a:hover::after {
-    width: 100%;
-  }
+    .image:hover {
+      transform: scale(1.05);
+    }
 
-  h2 {
-    text-align: center;
-    color: #004080;
-    margin-bottom: 30px;
-    font-weight: 600;
-    font-size: 2rem;
-  }
+    .icon {
+      width: 100%;
+      display: block;
+      height: auto;
+      object-fit: cover;
+    }
 
-  table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 15px;
-    border-radius: 12px;
-    background-color: #e6f0ff;
-    box-shadow: inset 0 0 25px #d0e2ff;
-    padding: 20px;
-  }
-  td {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 3px 8px rgba(0,115,230,0.15);
-    vertical-align: top;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  td:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,115,230,0.25);
-  }
+    header h1 {
+      margin: 0 0 8px 0;
+      font-weight: 600;
+      font-size: 2.4rem;
+    }
 
-  h3 {
-    color: #003366;
-    margin-top: 0;
-    font-weight: 600;
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-  }
+    header nav a {
+      color: #cce4ff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: 300;
+      padding-bottom: 4px;
+      position: relative;
+      transition: color 0.3s ease;
+    }
 
-  ul {
-    padding-left: 20px;
-    margin-top: 0;
-  }
+    header nav a:hover {
+      color: #ffffff;
+    }
 
-  a {
-    color: #0073e6;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  a:hover {
-    text-decoration: underline;
-    color: #004080;
-  }
+    header nav a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #cce4ff;
+      bottom: 0;
+      left: 0;
+      transition: width 0.3s ease;
+    }
 
-  footer {
-    text-align: center;
-    margin-top: 60px;
-    color: #004080;
-    font-weight: 600;
-    font-size: 1rem;
-  }
+    header nav a:hover::after {
+      width: 100%;
+    }
 
-  .btn-contact {
-    display: inline-block;
-    margin-top: 15px;
-    background-color: #0073e6;
-    color: white;
-    font-weight: 600;
-    padding: 12px 25px;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,115,230,0.3);
-  }
-  .btn-contact:hover {
-    background-color: #004080;
-  }
+    h2 {
+      text-align: center;
+      color: #cce4ff;
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 2rem;
+    }
 
-  #blogs article {
-    background: linear-gradient(to bottom right, #e8f3ff, #f8fbff);
-    padding: 35px;
-    border-radius: 18px;
-    margin-bottom: 45px;
-    box-shadow: 0 5px 25px rgba(0,115,230,0.12);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  #blogs article:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 30px rgba(0,115,230,0.18);
-  }
-  #blogs h3 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-    color: #00224d;
-  }
-  #blogs .date-tag {
-    display: inline-block;
-    background: #0073e6;
-    color: white;
-    font-size: 0.85rem;
-    padding: 4px 12px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-  }
-  #blogs p, #blogs ul {
-    color: #003366;
-    max-width: 800px;
-    margin: 0 auto 20px;
-    line-height: 1.7;
-  }
-  #blogs ul {
-    list-style: disc;
-    padding-left: 40px;
-  }
-  #blogs blockquote {
-    border-left: 4px solid #0073e6;
-    background: #e6f2ff;
-    padding: 15px 25px;
-    font-style: italic;
-    margin: 20px 0;
-    border-radius: 8px;
-    color: #004080;
-  }
-</style>
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 15px;
+      border-radius: 12px;
+      background-color: #142436;
+      padding: 20px;
+    }
+
+    td {
+      background: #1f2f45;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0, 115, 230, 0.15);
+      vertical-align: top;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    td:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 115, 230, 0.25);
+    }
+
+    h3 {
+      color: #cce4ff;
+      font-weight: 600;
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 0;
+    }
+
+    a {
+      color: #66b3ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #cce4ff;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #7faedb;
+      font-size: 1rem;
+    }
+
+    /* Blog Section */
+    #blogs article {
+      background: linear-gradient(to bottom right, #1f2f45, #263a55);
+      padding: 35px;
+      border-radius: 18px;
+      margin-bottom: 45px;
+      box-shadow: 0 5px 25px rgba(0, 115, 230, 0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #blogs article:hover {
+      transform: scale(1.01);
+      box-shadow: 0 10px 30px rgba(0, 115, 230, 0.18);
+    }
+
+    #blogs h3 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: #cce4ff;
+    }
+
+    #blogs .date-tag {
+      display: inline-block;
+      background: #0073e6;
+      color: white;
+      font-size: 0.85rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    #blogs p, #blogs ul {
+      color: #dce6f2;
+      max-width: 800px;
+      margin: 0 auto 20px;
+      line-height: 1.7;
+    }
+
+    #blogs ul {
+      list-style: disc;
+      padding-left: 40px;
+    }
+
+    #blogs blockquote {
+      border-left: 4px solid #0073e6;
+      background: #17283e;
+      padding: 15px 25px;
+      font-style: italic;
+      margin: 20px 0;
+      border-radius: 8px;
+      color: #b3d4ff;
+    }
+
+    /* Projects Section */
+    #projects .project {
+      background-color: #1f2f45;
+      padding: 30px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 20px rgba(0, 115, 230, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    #projects .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 115, 230, 0.2);
+    }
+
+    #projects h3 {
+      color: #cce4ff;
+      font-size: 1.5rem;
+    }
+
+    /* Contact Info */
+    #contact {
+      text-align: center;
+      margin-top: 60px;
+      background: #142436;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    #contact h2 {
+      color: #cce4ff;
+    }
+
+    #contact p {
+      font-size: 1.1rem;
+      color: #dce6f2;
+    }
+
+    #contact a {
+      color: #66b3ff;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
 
@@ -227,9 +265,9 @@
       <h1>Ken Andrew Francisco</h1>
       <nav>
         <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Blogs</a>
-        <a href="#">Contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -256,73 +294,90 @@
       </td>
       <td>
         <h3>Career Achievements</h3>
-        <p>Frontend Developer [Co-Founder] at NocturnalGames<br />
-        Founded an indie game developer team with close friends.<br />
+        <p>Frontend Developer [Co-Founder] at NocturnalGames<br>
         <a href="#">View My LinkedIn Profile</a></p>
 
         <h3>Community Involvement</h3>
-        <p>Active participant in local and online developer communities such as itch.io.<br />
-        Regularly contribute to projects.<br />
+        <p>Active member of itch.io and online dev spaces.<br>
         <a href="#">Visit My GitHub</a></p>
       </td>
       <td>
         <h3>Academic Qualifications</h3>
-        <p>Undergraduate (BS in Information Technology) from Cavite State University</p>
-        <p>Specializations:</p>
+        <p>BS in Information Technology – Cavite State University</p>
         <ul>
           <li>Mobile App Developer</li>
-          <li>Well-versed with Godot Engine</li>
-          <li>Web Accessibility for Users</li>
-          <li>Optimization of Applications</li>
-          <li>Open-Source Softwares</li>
-          <li>Security in Mobile App and Web Applications</li>
+          <li>Well-versed in Godot Engine</li>
+          <li>Web Accessibility</li>
+          <li>App Optimization</li>
+          <li>Open-Source Software</li>
+          <li>Security in Apps</li>
         </ul>
       </td>
     </tr>
   </table>
 
-  <section id="blogs" style="margin-top: 60px;">
-    <h2>My Developer Journey</h2>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
 
-    <div style="text-align:center; margin-bottom: 30px;">
-      <a href="#contact" class="btn-contact">Get In Touch</a>
+    <div class="project">
+      <h3>🎮 Godot Platformer</h3>
+      <p>A 2D side-scrolling game featuring responsive controls and pixel-perfect collisions. Developed using Godot and GDScript.</p>
     </div>
+
+    <div class="project">
+      <h3>🛒 Bookstore E-Commerce</h3>
+      <p>Designed and built a full-stack web app for browsing, filtering, and buying books. Integrated cart system and admin dashboard.</p>
+    </div>
+
+    <div class="project">
+      <h3>📱 Mobile Diary App</h3>
+      <p>Flutter-based mobile app that allows users to privately log thoughts, add reminders, and search through past entries.</p>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blogs">
+    <h2>My Developer Journey</h2>
 
     <article>
       <h3>💡 Why I Love Working with Godot Engine</h3>
       <div class="date-tag">July 20, 2025</div>
       <p>Ever since I started exploring game development, the Godot Engine quickly became my favorite tool. It's lightweight, open-source, and gives me full control without locking me into a corporate ecosystem.</p>
-      <p>Whether I’m building 2D platformers or experimenting with 3D scenes, Godot offers flexibility and speed that’s hard to beat.</p>
       <blockquote>“Godot lets me create worlds without friction. It’s freedom for indie developers.”</blockquote>
-      <p>What I love most is its scripting language, GDScript. It feels intuitive, especially for developers coming from Python. Plus, the active community and detailed documentation help me level up fast.</p>
+      <p>Its scripting language, GDScript, is intuitive — especially for those coming from Python.</p>
     </article>
 
     <article>
       <h3>🛠 Top 5 Tools Every Web Dev Should Know</h3>
       <div class="date-tag">July 15, 2025</div>
-      <p>Over time, I've tried a lot of dev tools, but these five are essential in my toolkit:</p>
       <ul>
-        <li><strong>VS Code</strong> – speed, extensions, Git integration</li>
-        <li><strong>Figma</strong> – UI/UX prototyping and collaboration</li>
-        <li><strong>Chrome DevTools</strong> – powerful debugging</li>
-        <li><strong>Netlify</strong> – instant project deployments</li>
-        <li><strong>ChatGPT</strong> – quick brainstorming and code checks</li>
+        <li><strong>VS Code</strong> – Fast editing, extensions</li>
+        <li><strong>Figma</strong> – UI/UX wireframes</li>
+        <li><strong>Chrome DevTools</strong> – Debug faster</li>
+        <li><strong>Netlify</strong> – Easy hosting</li>
+        <li><strong>ChatGPT</strong> – For code advice</li>
       </ul>
-      <p>Do you have your own favorite tools? <a href="#">Let’s connect and share!</a></p>
     </article>
 
     <article>
       <h3>📱 Mobile App Design – My Principles</h3>
       <div class="date-tag">July 1, 2025</div>
-      <p>I believe great apps are simple, fast, and empathetic. When I design a mobile UI, I focus on:</p>
       <ul>
-        <li>One-handed usability</li>
-        <li>Readable typography and contrast</li>
-        <li>Responsive layouts for any screen size</li>
-        <li>Clean architecture (MVVM & modular design)</li>
+        <li>One-handed use design</li>
+        <li>Readable typography</li>
+        <li>Responsive and modular</li>
+        <li>Architecture-focused (MVVM)</li>
       </ul>
-      <p>These are not just best practices — they’re values that guide me toward building human-centered experiences.</p>
     </article>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:kenandrew.francisco@cvsu.edu.ph">kenandrew.francisco@cvsu.edu.ph</a></p>
+    <p>GitHub: <a href="#">github.com/KenAndrew7</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/KenAndrew7</a></p>
   </section>
 </main>
 
